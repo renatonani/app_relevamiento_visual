@@ -1,17 +1,50 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
+<ion-header [translucent]="true" class = header>
+  <ion-toolbar style="--background: rgb(0, 171, 171);">
     <ion-title>
-      Tab 3
+      ¡Pon a prueba tu memoria!
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+<ion-content padding class="background" [fullscreen]="true"> 
+  <div class="background"></div>
+  <div class="overlay"></div>
+  <div class = text-container>
+    <p>¡Bienvenido!</p>
+  </div>
+  <form (ngSubmit)="login()">
+    <div class = login>
+      <ion-input placeholder=" Ingrese su correo" type="email" [(ngModel)]="email" name="email"></ion-input>
+      <ion-input placeholder=" Ingrese su contraseña" type="password" [(ngModel)]="password" name="password" required minlength="6"></ion-input>    
+      <div class = button-container>
+        <ion-button style = "font-size: 23px; --background: rgb(0, 0, 0); color: white;" type="submit">Iniciar sesión</ion-button>
+      </div>
+    </div>
+  </form>        
+  <!-- <div class="image-container2">
+    <img src="../../assets/rompecabezas2.png" alt="">
+  </div> -->
+  <div class="button-container">
+    <div class="button-container2">
+      <ion-button style="--background: rgb(255, 255, 255);" (click)="AutoRellenar('renatonani2@gmail.com','123456')">
+        <ion-icon name="extension-puzzle"></ion-icon>
+      </ion-button>
+      <p>Usuario 1</p>
+    </div>
+    <div class="button-container2">
+      <ion-button style="--background: rgb(108, 192, 192);" (click)="AutoRellenar('renatonani2@gmail.com','123456')">
+        <ion-icon name="extension-puzzle"></ion-icon>
+      </ion-button>
+      <p>Usuario 2</p>
+    </div>
+    <div class="button-container2">
+      <ion-button style="--background: rgb(0, 95, 95);" (click)="AutoRellenar('renatonani2@gmail.com','123456')">
+        <ion-icon name="extension-puzzle"></ion-icon>
+      </ion-button>
+      <p>Usuario 3</p>
+    </div>   
+  </div>
+  <!-- <div class="image-container">
+    <img src="../../assets/rompecabezas.png" alt="">
+  </div> -->
 </ion-content>

@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+
+ion-content{
+  --background: rgb(151, 18, 18);
+}
+.camera-container{
+    display: flex;    
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    ion-button{        
+        --background: rgb(114, 0, 0);
+        color:floralwhite;
+        font-family: 'Archivo Black', sans-serif;
+        font-size: 20px;
+        margin: 10px 30px;
+    }
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrar horizontalmente */
+    justify-content: center; /* Centrar verticalmente */
+    background-color: rgb(151, 18, 18);
+    box-shadow: 0px 0px 14px 0px #000000;
+    text-align: center;
+    width: 100%;
+    margin-top: 15px;
+    span{
+        width: 80%;
+    }
+  }
+  
+  .card {
+    margin: 10px;
+  }
+  
+  .image-container {
+    text-align: center; /* Centrar horizontalmente dentro de la tarjeta */
+    background-color: black;
+  }
+  
+  .image {
+    max-width: 80%; /* Ajustar el tamaño máximo de la imagen */
+    max-height: 80%;
+  }
+  
+  .vote-button {
+    /* Agrega estilos a tus botones de voto según sea necesario */
+    margin-right: 20px;
+  }
+*{
+    font-family: 'Archivo Black', sans-serif
+}
+  

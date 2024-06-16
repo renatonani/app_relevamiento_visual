@@ -1,0 +1,41 @@
+<ion-header class = header>
+  <ion-toolbar>
+    <ion-title>¡Bienvenido de nuevo!</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <form (ngSubmit)="login()">
+    <div class="ion-padding">
+      <ion-item>        
+        <ion-input placeholder="Ingrese su correo" type="email" [(ngModel)]="email" name="email"></ion-input>
+        <ion-icon name="person"> </ion-icon>
+      </ion-item>
+
+      <ion-item>        
+        <ion-input placeholder="Ingrese su contraseña" type="password" [(ngModel)]="password" name="password" required minlength="6"></ion-input>
+        <ion-icon name="lock-closed"> </ion-icon>
+      </ion-item>
+    </div>
+    <div class = button-container>
+      <ion-button class="rounded-button" type="submit">Iniciar sesión</ion-button>
+    </div>    
+  </form>
+  <div class = button-container2>
+    <div class = button-container3>
+      <ion-fab-button style="--background: rgb(245, 130, 130);" (click)="AutoRellenar('admin@admin.com','111111')"><ion-icon name="lock-open"></ion-icon></ion-fab-button>
+      <p>Usuario 1</p>
+    </div>
+    <div class = button-container3>
+      <ion-fab-button (click)="AutoRellenar('invitado@invitado.com','222222')"><ion-icon name="lock-open"></ion-icon></ion-fab-button>
+      <p>Usuario 2</p>
+    </div>
+    <div class = button-container3>
+      <ion-fab-button style="--background: rgb(245, 216, 216);" (click)="AutoRellenar('usuario@usuario.com','333333')"><ion-icon name="lock-open"></ion-icon></ion-fab-button>
+      <p>Usuario 3</p>
+    </div>
+  </div>  
+  <div class = imagen>    
+      <img src="../../assets/edificios1.png" alt="Edificios">
+  </div>
+</ion-content>

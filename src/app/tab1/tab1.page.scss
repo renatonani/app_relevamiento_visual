@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kenia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap');
+
+.input{
+    font-size: 300;
+  }
+  
+  ion-item{
+    --background:#e9104d;
+    border-radius: 10px;
+    margin-bottom: 16px;
+  
+  }
+  
+  ion-button{
+    --background:#e9104d;
+    border-radius: 10px;
+    margin-bottom: 16px;
+    margin-top: 5px;
+  }
+  
+  ion-fab-button{
+    --background:#f79d9d;
+  }
+
+  .button-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end; /* Alinea el contenido a la derecha */
+    height: 100%;
+    margin-right: 20px;
+  }
+  /* Agrega estilos CSS para mostrar los fab buttons uno debajo del otro en el lado izquierdo inferior */
+  .button-container2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinea los botones FAB a la izquierda */
+    margin-left: 30px; /* Agrega un espacio entre los botones FAB y el contenido */
+    margin-top: -30px;
+  }
+  
+  .button-container3 {
+    /* Elimina display: flex */
+    justify-content: center;
+    align-items: center; /* Alinea los elementos a la derecha */
+    color: black;
+    font-family: 'Mukta', sans-serif;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+  }  
+
+  /* Aplicar Roboto como fuente predeterminada */
+*{
+    font-family: 'Bebas Neue', sans-serif; 
+      
+}
+.image-container {
+    max-width: 40%;
+    height: auto; /* Para mantener la relación de aspecto */
+    display: flex;   
+    margin: 0 auto; /* Centra horizontalmente en la pantalla */
+    margin-top: 10px;
+  }
+.text-container{   
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    font-size: 40px;
+    color:black;    
+}
+.parte-inferior{
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  
+}
+
+.text-container p{
+  margin: 10px 0px;
+  justify-content: center;
+  align-self: center;
+  text-align: center;  
+}
+  
+
+
+  
+  
+
+  

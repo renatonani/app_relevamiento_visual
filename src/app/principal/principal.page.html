@@ -1,0 +1,15 @@
+<ion-header>
+  <div class="cabecera">
+    <ion-button class="logout" (click) = "cerrarSesion()"> Cerrar sesión <ion-icon name="exit-outline"></ion-icon></ion-button>
+    <ion-button class="logout" (click) = "verEstadisticas()"> Estadísticas <ion-icon name="stats-chart"></ion-icon></ion-button>    
+  </div>  
+  <div class="cabecera2">
+    <span> Seleccione el tipo de foto a subir </span>  
+  </div>
+</ion-header>
+<ion-content [fullscreen]="true" >  
+  <div class="container">    
+    <ion-button (click) = "elegirSeccion(true)" style="outline: 10px double #000000; border-right: solid 8px #111; border-radius: 40px 0px 40px 40px;  background-image: url('../../assets/edificio6.jpg');" expand="block" fill="clear" shape="round"><span >Foto COSA LINDA</span></ion-button>
+    <ion-button (click) = "elegirSeccion(false)" style="outline: 10px double #000000; border-left: solid 8px #111; border-radius: 40px 40px 40px 0px; background-image: url('../../assets/edificio7.png');" expand="block" fill="clear" shape="round"><span>Foto COSA FEA</span></ion-button>
+  </div> 
+</ion-content>

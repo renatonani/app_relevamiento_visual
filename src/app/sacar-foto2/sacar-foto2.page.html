@@ -1,0 +1,21 @@
+<ion-content>
+  <div class="camera-container">
+    <ion-button style="box-shadow: 0px 0px 14px 0px #000000;" (click) = "takePicture()">SACAR UNA FOTO</ion-button> 
+    <ion-button style="box-shadow: 0px 0px 14px 0px #000000;" (click) = "takePicture2()">SUBIR DE GALERIA</ion-button> 
+  </div>
+
+  <div class="container" *ngFor="let image of images">
+    <div class="card padding">
+      <div class="container image-container">
+        <img class="image" [src]="'data:image/jpeg;base64,' + this.image['ImageBase64']">
+      </div>
+      <div class="container">
+        <span>{{this.perfiles[image['UIDUser']] }}</span> 
+        <span>{{this.image['timestamp']}}</span>       
+        <div class="vote-container">
+          <ion-button (click) = "registrarVoto(this.image['ImageBase64'])" style="--background: black; color:aliceblue"><ion-icon style="color:aliceblue" name="checkmark-circle-outline"></ion-icon>VOTAR</ion-button>
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content>
